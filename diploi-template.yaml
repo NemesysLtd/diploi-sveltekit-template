@@ -47,9 +47,9 @@ parameterGroups:
         type: string
 
 environmentVariables:
-  - identifier: PROJECT_TITLE
-    defaultValue: My Todo App
-    type: string
+  - identifier: VITE_PORT
+    defaultValue: 5173
+    type: number
     contexts: label=app
 
 repositories:
