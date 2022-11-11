@@ -46,6 +46,8 @@ parameterGroups:
         defaultValue: todo
         type: string
 
+environmentVariables:
+
 repositories:
   - name: web
     identifier: web
