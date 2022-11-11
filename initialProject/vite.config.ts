@@ -1,8 +1,14 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import type { UserConfig } from 'vite';
+import { loadEnv } from 'vite';
 
-const config: UserConfig = {
-	plugins: [sveltekit()]
-};
+export default ({ mode }: { mode: string; }) => {
+	const env = loadEnv(mode, process.cwd());
+	const port = parseInt(env.VITE_PORT) || 5173;
 
-export default config;
+	return {
+		plugins: [sveltekit()],
+		server: {
+			port,
+		}
+	};
+}
