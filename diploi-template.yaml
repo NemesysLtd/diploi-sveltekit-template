@@ -47,6 +47,10 @@ parameterGroups:
         type: string
 
 environmentVariables:
+  - identifier: PROJECT_TITLE
+    defaultValue: My Todo App
+    type: string
+    contexts: label=app
 
 repositories:
   - name: web
