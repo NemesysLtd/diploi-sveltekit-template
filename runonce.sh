@@ -17,6 +17,8 @@ if [ ! "$(ls -A /app)" ]; then
   mkdir -p /root-persist/.vscode-server;
   touch /root-persist/.bash_history;
   touch /root-persist/.gitconfig;
+  
+  chmod +x /usr/local/bin/diploi-credential-helper
 
   git init;
   git config credential.helper '!diploi-credential-helper';
