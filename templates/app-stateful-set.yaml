@@ -25,7 +25,7 @@ spec:
           #command: ['sh', '-c', 'echo The app is running! && sleep 10000']
           ports:
             - containerPort: 80
-            - containerPort: {{ atoi .Values.envMap.VITE_PORT }}
+            - containerPort: {{ atoi .Values.envMap.VITE_PORT.value }}
           env:
             {{- range .Values.env }}
             {{- if contains "app" .contexts }}
