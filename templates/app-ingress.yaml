@@ -21,4 +21,4 @@ spec:
               service:
                 name: app
                 port: 
-                  number: {{ atoi .Values.envMap.VITE_PORT.value }}
+                  number: 80
