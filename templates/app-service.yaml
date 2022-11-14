@@ -5,9 +5,10 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: {{ atoi .Values.envMap.VITE_PORT.value }}
+      targetPort: app-vite
       name: app
     - port: 3000
+      targetPort: app-status
       name: status
   selector:
     app: {{ ternary "app" "disabled" .Values.enabled }}
