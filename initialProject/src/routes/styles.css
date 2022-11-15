@@ -3,7 +3,7 @@
 :root {
   --app-header-color: #111;
   --app-text-color: #444;
-  --app-link-color: #0070f3;
+  --app-link-color: #ff3e00;
   --app-border-color: #eee;
 }
 
@@ -17,6 +17,7 @@
   html {
     color-scheme: dark;
   }
+
   body {
     background: black;
   }
@@ -30,7 +31,7 @@ body {
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   color: var(--app-header-color);
 }
 

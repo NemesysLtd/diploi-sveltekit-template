@@ -2,7 +2,7 @@
 	"name": "sveltekit",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "ORIGIN=\"https://$APP_PUBLIC_URL\" vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -14,6 +14,7 @@
 		"@fontsource/fira-mono": "^4.5.0",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/adapter-node": "^1.0.0-next.100",
 		"@sveltejs/kit": "next",
 		"@types/cookie": "^0.5.1",
 		"@types/pg": "^8.6.5",
