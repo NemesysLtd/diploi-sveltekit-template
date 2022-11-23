@@ -1,19 +1,21 @@
-# Diploi Next.js + Postresql template
+# Diploi SvelteKit ToDo template
 
-- 💻 [Next.js](https://nextjs.org/)
+A simple starter ToDo app template implemented with SvelteKit.   
+Includes an optional PostgreSQL database.
+
+Features full TypeScript support, out-of-the-box DB connection, HMR support, and much more!   
+Implements a backed CRUD API with SvelteKit form actions.
+
+- 💻 [SvelteKit](https://kit.svelte.dev/)
 - 💿 [PostgreSQL](https://www.postgresql.org/)
 
-## Next.js
+## SvelteKit
 
 Available at `/`.
-
-TODO: Write
 
 ## PostgreSQL
 
 Available with a VSCode extension ([SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)) or by CLI.
-
-TODO: Write
 
 ### Connect via SQLTools
 
